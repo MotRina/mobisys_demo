@@ -1,0 +1,43 @@
+/*デフォルトのマウスカーソルを非表示にする*/
+html,
+body,
+a {
+  cursor: none;
+}
+
+/*カーソル要素*/
+#cursor{
+    position: fixed;
+  
+    /*丸の大きさと色の指定*/
+    background: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;/*真ん中にくるようにマイナスマージンで調整*/
+  
+    z-index: 3;/*一番手前に来るように*/
+    pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+    opacity: 0;
+
+    /* transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s; */
+    transform: translate(0, 0);
+  }
+  
+  /*ちょっと遅れてついてくるストーカー要素*/
+  #stalker{
+    position: fixed;
+  
+    /*丸の大きさと色の指定*/
+    background: rgb(117, 81, 145, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius:30px;
+    margin: -30px 0 0 -30px;/*真ん中にくるようにマイナスマージンで調整*/
+    z-index: 2;/*カーソルの後ろに来るように*/
+    pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+    opacity: 0;
+  }
+
+
+  
