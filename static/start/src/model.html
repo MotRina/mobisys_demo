@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction Results</title>
+    <link rel="stylesheet" type="text/css" href="../css/model.css">
+    <link rel="stylesheet" type="text/css" href="../css/cursor.css">    
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav class="header-left">
+        <a href="../../home/index.html"><img class="logo" src="../images/logo_m.png"></a>
+    </nav>
+    <div class="sidebar">
+        <h2>Progress</h2>
+        <div class="progress">
+            <p class="progress-number" id="pass">Select 10 images.</p>
+            <p class="progress-number" id="passe">Classify as stray or pet.</p>
+            <p class="progress-number" id="passed">Your Classification Accuracy</p>
+            <p class="progress-number" id="passeds">Identify features, take survey.</p>
+            <p class="progress-number" id="now">Model Prediction Results</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <p id="sp">05</p>
+        <h1>Model Prediction Results</h1>
+        <div class="accuracy-content" id="model-content">
+            <div id="progress-container">
+                <div id="progress-bar" data-label="0%"></div>
+                <div id="loading-message"></div>
+                <div id="loading-spinner"></div>
+            </div>
+        </div><br><br><br>
+        
+        <h1>Identified Features by Heatmaps</h1>
+        <div class="heatmap-content" id="heatmap-content">
+            <!-- Heatmaps will be loaded here -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+</html>

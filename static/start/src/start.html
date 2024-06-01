@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Classification</title>
+    <link rel="stylesheet" type="text/css" href="../css/defalt.css">
+    <link rel="stylesheet" type="text/css" href="../css/cursor.css">
+    <link rel="stylesheet" type="text/css" href="../css/scroll.css">
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav class="header-left">
+        <a href="../../home/index.html"><img class="logo" src="../images/logo_m.png"></a>
+    </nav>
+    <div class="sidebar">
+        <h2>Progress</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">0%</div>
+        </div>
+        <div class="progress">
+            <p class="progress-number" id="now">Select 10 images.</p>
+            <p class="progress-number">Classify as stray or pet.</p>
+            <p class="progress-number">Your Classification Accuracy</p>
+            <p class="progress-number">Identify features, take survey.</p>
+            <p class="progress-number">Model Prediction Results</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <p id="sp">01</p>
+        <h1>Select <u>10 Images</u> Randomly</h1>
+        <p style="color: rgb(205, 4, 4);">You don't need to classify the cats as stray or pet here yet. Please select the images randomly.</p>
+        <div class="image-grid" id="image-grid">
+        </div>
+        <div class="submit">
+            <button id="submit-button">Submit</button>
+        </div>
+    </div>
+    <footer id="footer" class="sp">
+        <div class="footer-box">
+            <p class="js-scroll scroll-top scrollview"><a href="#area-2">Scroll</a></p>
+            <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+</html>

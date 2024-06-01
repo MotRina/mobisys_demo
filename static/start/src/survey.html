@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="../css/survey.css">
+    <link rel="stylesheet" type="text/css" href="../css/cursor.css">
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav class="header-left">
+        <a href="../../home/index.html"><img class="logo" src="../images/logo_m.png"></a>
+    </nav>
+    <div class="sidebar">
+        <h2>Progress</h2>
+        <div class="progress">
+            <p class="progress-number" id="passone">Select 10 images.</p>
+            <p class="progress-number" id="passtwo">Classify as stray or pet.</p>
+            <p class="progress-number" id="passthree">Your Classification Accuracy</p>
+            <p class="progress-number" id="now">Identify features, take survey.</p>
+            <p class="progress-number">Model Prediction Results</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <p id="sp">04</p>
+        <h1>Identify Features</h1>
+        <h2>Which part of the cat's face did you look at when classifying?</h2>
+        <div class="survey-content" id="survey-content">
+            <!-- Survey will be loaded here -->
+        </div>
+        <div class="submit">
+            <button id="submit-survey">Submit Survey</button>
+        </div>
+        <div id="error-message" class="error-message"></div> <!-- Error message container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/survey.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+</html>
