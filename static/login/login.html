@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav class="header-left">
+        <a href="../home/index.html"><img class="logo" src="./images/logo_m.png"></a>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1>Log In</h1>
+            <div class="social-buttons">
+            </div>
+            <form id="login-form">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+            <p>Don't have an account? <a href="../sign_up/signup.html">Sign up</a></p>
+        </div>
+        <div class="image-container">
+            <div class="overlay">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
