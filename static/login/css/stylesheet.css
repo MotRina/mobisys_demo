@@ -1,0 +1,141 @@
+/* 【PC用css】=====================================================*/
+@media screen and (min-width : 769px) {
+    .logo {
+        height: 47px;
+        border-radius: 4px;
+        opacity: 0.8;
+        margin: 0px 0px 0px 5px;
+    }
+    .container {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 800px;
+        width: 100%;
+        height: 60%;
+    }
+    .image-container {
+        flex: 1;
+        background-image: url('../images/cat1.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+}
+/* 【PC用css】=====================================================*/
+
+/* 【SP用css】=====================================================*/
+@media screen and (max-width:768px) {
+    .logo {
+        height: 33px;
+        border-radius: 4px;
+        margin: 9px -31px 0px 2px;
+        opacity: 0.8;
+      }
+      .container {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        height: 56%;
+    }
+    .image-container {
+        display: none;
+    }
+
+}
+  
+/* 【SP用css】=====================================================*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-color: rgba(255, 255, 255, 0.93);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+
+.form-container {
+    padding: 40px;
+    flex: 1;
+}
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-container form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-container form button:hover {
+    background-color: #333;
+}
+.form-container .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.form-container .social-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+}
+.form-container .social-buttons button:last-child {
+    margin-right: 0;
+}
+.form-container .social-buttons .google {
+    background-color: #4285f4;
+    color: white;
+}
+.form-container .social-buttons .twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(0, 0, 0);
+}
+.image-container .overlay p {
+    margin: 5px 0;
+}
