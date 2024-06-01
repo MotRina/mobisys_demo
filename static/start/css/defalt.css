@@ -1,0 +1,227 @@
+/* 【PC用css】=====================================================*/
+@media screen and (min-width : 769px) {
+  .logo {
+      height: 47px;
+      border-radius: 4px;
+      opacity: 0.8;
+      margin: 0px 0px 0px 5px;
+  }
+  #sp{
+    display: none;
+  }
+
+}
+/* 【PC用css】=====================================================*/
+
+/* 【SP用css】=====================================================*/
+@media screen and (max-width:768px) {
+  .logo {
+    height: 33px;
+    border-radius: 4px;
+    margin: 14px -31px 0px -3px;
+    opacity: 0.8;
+  }
+
+  .sidebar {
+      display: none; /* Hide sidebar on mobile */
+  }
+
+  .main-content {
+      padding: 10px;
+      margin-top: 62px; /* Add margin to avoid overlap with fixed progress bar */
+  }
+
+  .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Increase the size of images on mobile */
+  }
+
+  .image-grid img {
+      width: 100%;
+      height: auto; /* Ensure images maintain aspect ratio */
+  }
+
+  .submit {
+      display: flex;
+      justify-content: center;
+  }
+
+  .progress-container {
+      position: fixed; /* Fix progress bar at the top */
+      top: 0;
+      width: 100%;
+      background-color: #f4f4f4;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .progress-bar {
+      height: 15px;
+  }
+
+  .progress-number {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #sp{
+    color: pink;
+    opacity: 0.5;
+    font-weight: 900;
+    font-size: 55px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .main-content h1{
+    margin: 0px;
+  }
+}
+
+/* 【SP用css】=====================================================*/
+
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0px!important;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 62px 20px 20px 20px;
+}
+
+#now{
+  background-color: #f5afaf;
+}
+
+.header-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 0px 20px;
+  padding: 0px 20px 50px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  border: 3px solid transparent;
+}
+
+.image-grid img.selected {
+  border-color: #009396;
+}
+
+#submit-button {
+  margin-top: 20px;
+  padding: 20px 60px;
+  border-radius: 14px;
+  border: none;
+  background-color: #e4b3b3;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px grey inset;
+}
+
+#submit-classification{
+  margin-top: 20px;
+  padding: 20px 60px;
+  border-radius: 14px;
+  border: none;
+  background-color: #e4b3b3;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px grey inset;
+}
+
+#submit-button:hover {
+  background-color: #d9a1a1;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+#submit-classification:hover {
+  background-color: #d9a1a1;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+#classification-grid{
+  margin: 100px 0 0 0;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.progress-number {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.classification-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.classification-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.classification-buttons button:hover {
+  background-color: #ccc;
+}
+
+.image-container.stray {
+  border: 3px solid red;
+}
+
+.image-container.pet {
+  border: 3px solid green;
+}

@@ -1,0 +1,275 @@
+/* 【PC用css】=====================================================*/
+@media screen and (min-width : 769px) {
+    .logo {
+        height: 47px;
+        border-radius: 4px;
+        opacity: 0.8;
+        margin: 0px 0px 0px 5px;
+    }
+    #sp{
+      display: none;
+    }
+    .survey-question img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .survey-question p {
+        margin: 0;
+    }
+
+    .survey-question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 174px;
+        box-sizing: border-box;
+    }
+
+    .survey-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0px 10px;
+    }
+
+    .survey-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .correct {
+        color: #cf1a50;
+        font-weight: 900;
+      }
+      
+    .incorrect {
+        color: #1d90b5;
+        font-weight: 900;
+    }
+    
+  
+  }
+  /* 【PC用css】=====================================================*/
+  
+  /* 【SP用css】=====================================================*/
+  @media screen and (max-width:768px) {
+    .logo {
+    height: 33px;
+    border-radius: 4px;
+    margin: 14px -31px 0px -3px;
+    opacity: 0.8;
+    }
+    .correct {
+        color: #cf1a50;
+        font-weight: 900;
+        font-size: 14px !important;
+      }
+      
+    .incorrect {
+        color: #1d90b5;
+        font-weight: 900;
+        font-size: 14px !important;
+    }
+  
+    .sidebar {
+        display: none; /* Hide sidebar on mobile */
+    }
+  
+    .main-content {
+        padding: 10px;
+        margin-top: 62px; /* Add margin to avoid overlap with fixed progress bar */
+    }
+  
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Increase the size of images on mobile */
+    }
+  
+    .image-grid img {
+        width: 100%;
+        height: auto; /* Ensure images maintain aspect ratio */
+    }
+  
+    .submit {
+        display: flex;
+        justify-content: center;
+    }
+  
+    .progress-container {
+        position: fixed; /* Fix progress bar at the top */
+        top: 0;
+        width: 100%;
+        background-color: #f4f4f4;
+        z-index: 1000;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .progress-bar {
+        height: 15px;
+    }
+  
+    .progress-number {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    #sp{
+      color: pink;
+      opacity: 0.5;
+      font-weight: 900;
+      font-size: 55px;
+      margin: 0px 0px 0px 0px;
+    }
+  
+    .main-content h1{
+      margin: 0px;
+    }
+    .survey-question img {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: 120px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .survey-question p {
+        margin: 0;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .survey-question {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 44%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .survey-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 10px 10px;
+        font-size: 11px;
+        width: 98%;
+        padding: 0px 8px;
+        justify-content: flex-start;
+    }
+
+    .survey-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+  }
+  
+  /* 【SP用css】=====================================================*/
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0px!important;
+}
+
+
+.sidebar {
+    width: 200px!important;
+    background-color: #f4f4f4;
+    padding: 62px 20px 20px 20px;
+    flex-shrink: 0;
+  }
+  
+#passone{
+    background-color: #c9c7c7;
+}
+
+#passtwo{
+    background-color: #c9c7c7;
+}
+
+#passthree{
+    background-color: #c9c7c7;
+}
+#now {
+    background-color: #f5afaf;
+}
+.main-content h2{
+    color: #d47071;
+}
+.progress-number{
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.header-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.survey-options label {
+    margin-right: 10px;
+}
+
+.correct {
+    color: #cf1a50;
+    font-weight: 900;
+}
+
+.incorrect {
+    color: #1d90b5;
+    font-weight: 900;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-survey {
+  margin-top: 20px;
+  padding: 20px 60px;
+  border-radius: 14px;
+  border: none;
+  background-color: #e4b3b3;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px grey inset;
+}
+
+#submit-survey:hover {
+    background-color: #d9a1a1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: red;
+    text-align: center;
+}
+

@@ -1,0 +1,350 @@
+/* 【PC用css】=====================================================*/
+@media screen and (min-width : 769px) {
+  .logo {
+      height: 47px;
+      border-radius: 4px;
+      opacity: 0.8;
+      margin: 0px 0px 0px 5px;
+  }
+  #sp{
+    display: none;
+  }
+  #classification-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e1e1e1;
+    padding: 68px 80px 80px 80px;
+    margin: 23px 50px 30px 50px;
+    border-radius: 140px;
+    width: 600px;
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  #classification-grid h2{
+    margin-bottom: 53px;
+    color: #d47071;
+  }
+
+  #stray-cat-button{
+    background-color: #349087;
+    box-shadow: 0px 7px #255987;
+    margin: 20px;
+    padding: 20px 60px;
+    font-weight: 900;
+    color: white;
+  }
+  #stray-cat-button:hover{
+    background-color: #255987;
+    box-shadow: 0px 7px #255987;
+  }
+
+  #pet-cat-button{
+    background-color: #e0a78b;
+    box-shadow: 0px 7px #a33636;
+    margin: 20px;
+    padding: 20px 60px;
+    font-weight: 900;
+    color: white;
+  }
+
+  #pet-cat-button:hover{
+    background-color: #a33636;
+    box-shadow: 0px 7px #a33636;
+  }
+
+  .classification-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+}
+/* 【PC用css】=====================================================*/
+
+/* 【SP用css】=====================================================*/
+@media screen and (max-width:768px) {
+  .logo {
+    height: 33px;
+    border-radius: 4px;
+    margin: 14px -31px 0px -3px;
+    opacity: 0.8;
+  }
+
+  .sidebar {
+      display: none; /* Hide sidebar on mobile */
+  }
+
+  .main-content {
+      padding: 10px;
+      margin-top: 62px; /* Add margin to avoid overlap with fixed progress bar */
+  }
+
+  .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Increase the size of images on mobile */
+  }
+
+  .image-grid img {
+      width: 100%;
+      height: auto; /* Ensure images maintain aspect ratio */
+  }
+
+  .submit {
+      display: flex;
+      justify-content: center;
+  }
+
+  .progress-container {
+      position: fixed; /* Fix progress bar at the top */
+      top: 0;
+      width: 100%;
+      background-color: #f4f4f4;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .progress-bar {
+      height: 15px;
+  }
+
+  .progress-number {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #sp{
+    color: pink;
+    opacity: 0.5;
+    font-weight: 900;
+    font-size: 55px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .main-content h1{
+    margin: 0px;
+  }
+
+  #classification-grid{
+    display: flex;
+    flex-direction: column;
+    background-color: #e1e1e1;
+    padding: 17px 10px 19px 10px;
+    margin: 16px 0px 30px 0px;
+    border-radius: 36px;
+    align-items: center;
+  }
+
+  #classification-grid h2{
+    color: #d47071;
+    padding: 0px 23px;
+  }
+
+  #stray-cat-button{
+    background-color: #349087;
+    box-shadow: 0px 7px #255987;
+    margin: 20px;
+    padding: 20px 30px;
+    font-weight: 900;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #stray-cat-button:hover{
+    background-color: #255987;
+    box-shadow: 0px 7px #255987;
+  }
+
+  #pet-cat-button{
+    background-color: #e0a78b;
+    box-shadow: 0px 7px #a33636;
+    margin: 20px;
+    padding: 20px 30px;
+    font-weight: 900;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #pet-cat-button:hover{
+    background-color: #a33636;
+    box-shadow: 0px 7px #a33636;
+  }
+
+  .classification-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/* 【SP用css】=====================================================*/
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0px!important;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 62px 20px 20px 20px;
+    height: 857px;
+  }
+  
+
+
+
+
+  .header-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  
+  #passed{
+    background-color: #c9c7c7;
+  }
+  #now{
+    background-color: #f5afaf;
+  }
+
+  
+
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 10px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    border: 3px solid transparent;
+  }
+  
+  .image-grid img.selected {
+    border-color: #009396;
+  }
+  
+  #submit-button {
+    margin-top: 20px;
+    padding: 20px 60px;
+    border-radius: 14px;
+    border: none;
+    background-color: #e4b3b3;
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px grey inset;
+  }
+  
+  #submit-classification{
+    padding: 20px 60px;
+    border-radius: 14px;
+    border: none;
+    background-color: #dedede;
+    color: #717171;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 -4px 5px -2px grey inset;
+  }
+  
+  #submit-button:hover {
+    background-color: #959595;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  
+  #submit-classification:hover {
+    background-color: #959595;
+    color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  
+  .classification-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-container {
+    width: 100%;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .progress-number {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+
+  
+  .image-container img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .classification-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .classification-buttons button:hover {
+    background-color: #ccc;
+  }
+  
+  .image-container.stray {
+    border: 3px solid red;
+  }
+  
+  .image-container.pet {
+    border: 3px solid green;
+  }
+
+  .error-message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: red;
+    text-align: center;
+  }
+
