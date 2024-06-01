@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/scroll.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+  <link rel=”icon” href=“./images/favicon.ico”>
+</head>
+
+<body>
+  <header>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav>
+      <div class="header-left">
+        <a href="index.html"><img class="logo" src="./images/logo_m.png"></a>
+      </div>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#blue-overview">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      </span>
+      <div class="header-right">
+        <span id="username"></span>
+        <a href="../login/login.html" class="login" style="margin-right: 10px;">LOGIN</a>
+        <a href="../sign_up/signup.html" class="signup" style="box-shadow: inset 0 0 0 2px #fff;">SIGN UP</a>
+        <a href="../login/logout.php" id="logout" class="logout" style="display:none; margin-right: 10px;">LOGOUT</a>
+      </div>
+    </nav>
+  </header>
+
+<!---画面遷移用-->
+  <div class="top-wrapper">
+    <img src="./images/cat3.png">
+    <div class="container">
+      <div class="btn-wrapper">
+        <a id="start-btn-1" href="#"><span class="btn message">START</span></a>
+        <p id="start-error-1" style="color: red; display: none;">Please log in to continue.</p>       
+        <!-- <a href="#" class="btn signup">sign up</a>
+        <br>
+        <a href="#" class="btn register">login</a>
+        <br>
+        <a href="/Users/rinamotoyama/Downloads/4年春学期/研究会/mobisys_demo/MotRina.github.io-LostCat_classification/demo/ojus_mobisys_poster.pdf" class="btn poster">poster</a> -->
+      </div>
+    </div>
+  </div>
+
+<!-- overview -->
+  <div class="overview-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2 id="blue-overview">About This Demo</h2>
+        <h3 style="font-weight: 100;">Our demonstration shows how our deep learning techniques compare against humans 
+          <br>
+          for the particular social problem of <span style="color: rgb(196, 33, 33); font-weight: 900;">lost cats</span>, 
+          <br>
+          a problem perceived as a serious problem in Japanese society. </h3>
+        <div class="overviews">
+          <div class="overview">
+            <div class="overview-icon">
+              <img class="view-img" src="./images/pc.png">
+              <p style="font-weight: 900;">Human</p>
+            </div>
+            <p class="text-contents">Experience the challenge of discerning subtle differences between stray and pet cats, and see how accurately you can make this distinction.</p>
+          </div>
+          <img class="vs" src="./images/vs.png">
+          <div class="overview">
+            <div class="overview-icon">
+              <img class="view-img" src="./images/cnn.png">
+              <p style="font-weight: 900;">Deep Learning Model</p>
+            </div>
+            <p class="text-contents">This model, a fine-tuned ResNet-50, has been specifically adapted for the task of distinguishing between stray and pet cats.</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+<!-- what we want you to do -->
+  <div class="step-wrapper">
+    <div class="heading">
+      <h2 id="black-overview">What We <span class="glitch">Want You</span> To Do</h2>
+
+      <div class="step-box">
+
+        <div class="one">
+          <img src="./images/page1.png" class="page-image">
+          <div class="step">
+            <div class="step-icon">
+              <i class="numbers">01</i>
+              <h3 style="font-weight: 900; font-size: 25px;">Select cat images.</h3>
+            </div>
+            <p>You will choose 10 cat images from a provided set.</p>
+          </div>
+        </div>
+        <div class="two">
+          <img src="./images/page2.png" class="page-image" id="sp">
+          <div class="step-02">
+            <div class="step-icon-02">
+              <i class="numbers">02</i>
+              <h3 style="font-weight: 900; font-size: 25px;">Classify each image.</h3>
+            </div>
+            <p>You will classify each selected image as either a "Stray Cat" or "Pet Cat" by pressing the corresponding button.</p>
+          </div>
+          <img src="./images/page2.png" class="page-image" id="pc">
+        </div>
+        <div class="three">
+          <img src="./images/page3.png" class="page-image">
+          <div class="step">
+            <div class="step-icon">
+              <i class="numbers">03</i>
+              <h3 style="font-weight: 900; font-size: 25px;">Explain the cat facial features focused on during classification.</h3>
+            </div>
+            <p style="color: #a3a3a3;">You will complete a questionnaire explaining the important features of the cat's face you used for classification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dl -->
+  <div class="dl-wrapper">
+    <div class="heading">
+      <h2 id="dl-overview">In The Background</h2>
+      <div class="bg-box">
+        <p>While you classify cat images, <br>our system's deep-learning model will concurrently classify the <span style="color: rgb(196, 33, 33); font-weight: 900;">same images</span> in the background.</p>
+        <p>Once the survey is submitted, the AI classification results, along with their respective accuracy rates, will be displayed.</p>
+      </div>
+      <img src="./images/page4.png" class="page-image-dl">
+    </div>
+  </div>
+
+  <div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h3 style="margin-bottom: 40px;">Let's get started with classifying stray and pet cats!</h3>
+        <a id="start-btn-2" href="#"><span class="btn message">START</span></a>
+        <p id="start-error-2" style="color: red; display: none;">Please log in to continue.</p>    
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-box">
+      <img src="./images/logo_m.png">
+    <p class="js-scroll scroll-top scrollview"><a href="#area-2">Scroll</a></p>
+    <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
+    <small>&copy; copyright.</small>
+    </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--自作のJS-->
+  <script src="js/scroll.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/username.js"></script>
+</body>
+</html>
