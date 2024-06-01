@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="stalker" class="stalker"></div>
+    <nav class="header-left">
+        <a href="../home/index.html"><img class="logo" src="./images/logo_m.png"></a>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1>Create Account</h1>
+            <div class="social-buttons">
+            </div>
+            <form action="signup.php" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="password" name="password" placeholder="Create a password" required>
+                <button type="submit">Sign up</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+            <p>Already have an account? <a href="../login/login.html">Log in</a></p>
+        </div>
+        <div class="image-container">
+            <div class="overlay">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/cursor.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('error')) {
+            const errorMessage = params.get('error');
+            document.getElementById('error-message').innerText = errorMessage;
+          }
+        });
+    </script>
+</body>
+</html>
